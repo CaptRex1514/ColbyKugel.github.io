@@ -61,7 +61,132 @@
   <a class="cta" href="#projects">EXPLORE MY WORK ↗</a>
   <span class="scroll">SELECT A BAY OR SCROLL TO EXPLORE ↓</span>
 </div>
-<main><section id="experience"><div class="section-head"><div><div class="eyebrow">01 / Field experience</div><h2>Engineering beyond the classroom.</h2></div><span class="count">EXPERIENCE LOG</span></div><div class="card"><div class="eyebrow">American Electric Power</div><h3>Transmission Field Services Engineering Internship</h3><p>Columbus, Ohio · Summer internship opportunity</p><p>An opportunity to connect electrical engineering fundamentals with transmission infrastructure and field engineering.</p><span class="tag">POWER SYSTEMS</span><span class="tag">TRANSMISSION</span><p class="note">Role accepted. Dates, completion status, and work highlights to be confirmed.</p></div></section>
-<section id="education"><div class="section-head"><div><div class="eyebrow">02 / Knowledge core</div><h2>Texas A&M University</h2></div><span class="count">COLLEGE STATION, TX</span></div><div class="grid"><article class="card"><h3>Electrical Engineering</h3><p>Building a foundation across circuits, energy conversion, digital hardware, embedded programming, and computer architecture.</p><div class="eyebrow">Relevant coursework & study areas</div><div class="coursework"><span>Electric Energy Conversion · ECEN 340</span><span>Computer Architecture</span><span>Digital Logic & Verilog</span><span>Signals & Systems</span><span>Electromagnetics</span></div></article><article class="card"><div class="eyebrow">Featured school project</div><h3>ARMv8 Single-Cycle Processor</h3><p>Coursework implementing processor components in Verilog, including a 64-bit register file, ALU, sign extender, and next-PC logic. Used self-checking testbenches and waveform inspection to verify behavior.</p><span class="tag">VERILOG</span><span class="tag">ARMv8</span><span class="tag">IVERILOG</span></article></div></section>
-<section id="projects"><div class="section-head"><div><div class="eyebrow">03 / Project archive</div><h2>From concept to working hardware.</h2></div><span class="count">SELECTED BUILDS / 03</span></div><div class="grid"><article class="card"><div class="eyebrow">01 / Aggies Create</div><h3>Drone Launcher</h3><p>Contributed to a launcher designed for a 35 lb drone at 55 mph. Manually milled aluminum components from CAD models for the leg and force-absorption system.</p><div class="metric">Best in Showcase<span>INNOVATION EXPO · SPRING 2025 · $400 AWARD</span></div><span class="tag">CAD</span><span class="tag">MANUAL MILLING</span><span class="tag">PROTOTYPING</span></article><article class="card"><div class="eyebrow">02 / Embedded systems</div><h3>Water Level Sensor</h3><p>Worked on a six-person team to measure current consumption and improve battery life. The connected app monitored multiple sensors and delivered push notifications.</p><div class="metric">10×<span>BATTERY LIFE IMPROVEMENT · 2 DAYS → 20 DAYS</span></div><span class="tag">POWER BUDGETING</span><span class="tag">SENSORS</span><span class="tag">EMBEDDED</span></article><article class="card wide"><div class="eyebrow">03 / Robotics</div><h3>Swarm Robotics & SLAM</h3><p>Explored ground-based swarm robotics for art, using simultaneous localization and mapping to map the environment and track relative positions.</p><span class="tag">ROBOTICS</span><span class="tag">SLAM</span><span class="tag">LOCALIZATION</span></article></div></section>
-<section id="leadership"><div class="section-head"><div><div class="eyebrow">04 / Team systems</div><h2>Build the team. Expand the possibilities.</h2></div></div><div class="grid"><article class="card"><div class="eyebrow">Rev Silicon / Texas A&M</div><h3>Operations President</h3><p>Lead public relations, branding, recruitment, outreach, and corporate relations. Support a student community learning the chip tapeout process through projects, bootcamp, workshops, and industry speakers.</p><span class="tag">OPERATIONS</span><span class="tag">CORPORATE RELATIONS</span><span class="tag">SEMICONDUCTORS</span></article><article class="card"><div class="eyebrow">Aggies Create</div><h3>Social Media Manager</h3><p>Communicated student engineering work through social posts, sponsor recognition, and project stories, connecting technical teams with a broader audience.</p><span class="tag">COMMUNICATION</span><span class="tag">BRANDING</span><span class="tag">OUTREACH</span></article></div></section><section class="contact"><div><div class="eyebrow">Next / Let's connect</div><h2>Always building what’s next.</h2><p>Interested in hardware, embedded systems, and the people behind them.</p></div><a class="cta" href="#home">BACK TO THE HALL ↑</a></section></main><footer><span>COLBY KUGEL / ENGINEERING PORTFOLIO</span><button class="motion" aria-pressed="false">PAUSE HOLOGRAM</button></footer><script>const motion=document.querySelector('.motion');motion.addEventListener('click',()=>{const paused=document.body.classList.toggle('paused');motion.setAttribute('aria-pressed',paused);motion.textContent=paused?'RESUME HOLOGRAM':'PAUSE HOLOGRAM';});</script></body></html>
+<main>
+  <section id="experience">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">01 / Field experience</div>
+        <h2>Engineering beyond the classroom.</h2>
+      </div>
+      <span class="count">EXPERIENCE LOG</span>
+    </div>
+    <div class="card">
+      <div class="eyebrow">American Electric Power</div>
+      <h3>Transmission Field Services Engineering Internship</h3>
+      <p>Columbus, Ohio · Summer internship opportunity</p>
+      <p>An opportunity to connect electrical engineering fundamentals with transmission infrastructure and field engineering.</p>
+      <span class="tag">POWER SYSTEMS</span>
+      <span class="tag">TRANSMISSION</span>
+      <p class="note">Role accepted. Dates, completion status, and work highlights to be confirmed.</p>
+    </div>
+  </section>
+<section id="education">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">02 / Knowledge core</div>
+      <h2>Texas A&M University</h2></div>
+    <span class="count">COLLEGE STATION, TX</span>
+  </div>
+  <div class="grid"><article class="card">
+    <h3>Electrical Engineering</h3>
+    <p>Building a foundation across circuits, energy conversion, digital hardware, embedded programming, and computer architecture.</p>
+    <div class="eyebrow">Relevant coursework & study areas</div>
+    <div class="coursework">
+      <span>Electric Energy Conversion · ECEN 340</span>
+      <span>Computer Architecture</span>
+      <span>Digital Logic & Verilog</span>
+      <span>Signals & Systems</span>
+      <span>Electromagnetics</span>
+    </div>
+  </article>
+    <article class="card"
+      ><div class="eyebrow">Featured school project</div>
+      <h3>ARMv8 Single-Cycle Processor</h3>
+      <p>Coursework implementing processor components in Verilog, including a 64-bit register file, ALU, sign extender, and next-PC logic. Used self-checking testbenches and waveform inspection to verify behavior.</p>
+      <span class="tag">VERILOG</span>
+      <span class="tag">ARMv8</span>
+      <span class="tag">IVERILOG</span>
+    </article>
+  </div>
+</section>
+<section id="projects">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">03 / Project archive</div>
+      <h2>From concept to working hardware.</h2>
+    </div>
+    <span class="count">SELECTED BUILDS / 03</span>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="eyebrow">01 / Aggies Create</div>
+      <h3>Drone Launcher</h3>
+      <p>Contributed to a launcher designed for a 35 lb drone at 55 mph. Manually milled aluminum components from CAD models for the leg and force-absorption system.</p>
+      <div class="metric">Best in Showcase
+        <span>INNOVATION EXPO · SPRING 2025 · $400 AWARD</span>
+      </div>
+      <span class="tag">CAD</span>
+      <span class="tag">MANUAL MILLING</span>
+      <span class="tag">PROTOTYPING</span>
+    </article>
+    <article class="card">
+      <div class="eyebrow">02 / Embedded systems</div>
+      <h3>Water Level Sensor</h3>
+      <p>Worked on a six-person team to measure current consumption and improve battery life. The connected app monitored multiple sensors and delivered push notifications.</p>
+      <div class="metric">10×<span>BATTERY LIFE IMPROVEMENT · 2 DAYS → 20 DAYS</span></div>
+      <span class="tag">POWER BUDGETING</span>
+      <span class="tag">SENSORS</span>
+      <span class="tag">EMBEDDED</span>
+    </article>
+    <article class="card wide">
+      <div class="eyebrow">03 / Robotics</div>
+      <h3>Swarm Robotics & SLAM</h3>
+      <p>Explored ground-based swarm robotics for art, using simultaneous localization and mapping to map the environment and track relative positions.</p>
+      <span class="tag">ROBOTICS</span>
+      <span class="tag">SLAM</span>
+      <span class="tag">LOCALIZATION</span>
+    </article>
+  </div>
+</section>
+<section id="leadership">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">04 / Team systems</div>
+      <h2>Build the team. Expand the possibilities.</h2>
+    </div>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="eyebrow">Rev Silicon / Texas A&M</div>
+      <h3>Operations President</h3>
+      <p>Lead public relations, branding, recruitment, outreach, and corporate relations. Support a student community learning the chip tapeout process through projects, bootcamp, workshops, and industry speakers.</p>
+      <span class="tag">OPERATIONS</span>
+      <span class="tag">CORPORATE RELATIONS</span>
+      <span class="tag">SEMICONDUCTORS</span>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Aggies Create</div>
+      <h3>Social Media Manager</h3>
+      <p>Communicated student engineering work through social posts, sponsor recognition, and project stories, connecting technical teams with a broader audience.</p>
+      <span class="tag">COMMUNICATION</span>
+      <span class="tag">BRANDING</span>
+      <span class="tag">OUTREACH</span>
+    </article>
+  </div>
+</section>
+  <section class="contact">
+    <div>
+      <div class="eyebrow">Next / Let's connect</div>
+      <h2>Always building what’s next.</h2>
+      <p>Interested in hardware, embedded systems, and the people behind them.</p>
+    </div>
+    <a class="cta" href="#home">BACK TO THE HALL ↑</a>
+  </section>
+</main>
+  <footer>
+    <span>COLBY KUGEL / ENGINEERING PORTFOLIO</span>
+    <button class="motion" aria-pressed="false">PAUSE HOLOGRAM</button>
+  </footer>
+  <script>const motion=document.querySelector('.motion');motion.addEventListener('click',()=>{const paused=document.body.classList.toggle('paused');motion.setAttribute('aria-pressed',paused);motion.textContent=paused?'RESUME HOLOGRAM':'PAUSE HOLOGRAM';});</script>
+</body>
+</html>
