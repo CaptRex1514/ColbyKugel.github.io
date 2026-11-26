@@ -278,6 +278,23 @@
         inset 0 0 18px #80edff15;
     }
 
+    .bay-icon {
+  width: 78px;
+  height: 95px;
+  fill: none;
+  stroke: var(--cyan);
+  stroke-width: 1.3;
+  filter: drop-shadow(0 0 8px #5ab8de88);
+}
+
+@media (max-width: 760px) {
+  .bay-icon {
+    width: 32px;
+    height: 45px;
+    flex-shrink: 0;
+  }
+}
+
     .bay strong {
       font-size: 14px;
       font-weight: 500;
@@ -421,6 +438,14 @@
       gap: 14px;
       padding: 0 20px;
     }
+    .hall-links {
+  align-items: center;
+}
+
+.email-text {
+  color: var(--text);
+  font-size: 16px;
+}
 
     .button {
       display: inline-block;
@@ -688,6 +713,17 @@
       .card {
         padding: 23px;
       }
+      .portrait img {
+  filter: none;
+}
+
+.portrait::after {
+  display: none;
+}
+
+.portrait {
+  animation: none;
+}
     }
   </style>
 </head>
@@ -726,9 +762,12 @@
           aria-label="Open the experience bay"
         >
           <span class="bay-label">
-            <span class="bay-symbol" aria-hidden="true">⚡</span>
-            <strong>EXPERIENCE</strong>
-          </span>
+  <svg class="bay-icon" viewBox="0 0 80 100" aria-hidden="true">
+    <path d="M35 5 15 55h24l-6 40 32-57H43L52 5Z"/>
+    <circle cx="40" cy="50" r="34"/>
+  </svg>
+  <strong>EXPERIENCE</strong>
+</span>
         </a>
 
         <a
@@ -738,9 +777,11 @@
           aria-label="Open the education bay"
         >
           <span class="bay-label">
-            <span class="bay-symbol" aria-hidden="true">∑</span>
-            <strong>EDUCATION</strong>
-          </span>
+  <svg class="bay-icon" viewBox="0 0 80 100" aria-hidden="true">
+    <path d="m4 35 36-19 36 19-36 19ZM15 43v23q25 20 50 0V43M74 37v38M22 82h36"/>
+  </svg>
+  <strong>EDUCATION</strong>
+</span>
         </a>
 
         <div class="hologram">
@@ -769,10 +810,14 @@
           data-section="projects"
           aria-label="Open the projects bay"
         >
-          <span class="bay-label">
-            <span class="bay-symbol" aria-hidden="true">&lt;/&gt;</span>
-            <strong>PROJECTS</strong>
-          </span>
+         <span class="bay-label">
+  <svg class="bay-icon" viewBox="0 0 80 100" aria-hidden="true">
+    <rect x="16" y="25" width="48" height="50" rx="3"/>
+    <rect x="28" y="37" width="24" height="26"/>
+    <path d="M25 12v13m15-13v13m15-13v13M25 75v13m15-13v13m15-13v13M3 35h13M3 50h13M3 65h13M64 35h13M64 50h13M64 65h13"/>
+  </svg>
+  <strong>PROJECTS</strong>
+</span>
         </a>
 
         <a
@@ -781,11 +826,15 @@
           data-section="leadership"
           aria-label="Open the leadership bay"
         >
-          <span class="bay-label">
-            <span class="bay-symbol" aria-hidden="true">◎</span>
-            <strong>LEADERSHIP</strong>
-          </span>
-        </a>
+        <span class="bay-label">
+  <svg class="bay-icon" viewBox="0 0 80 100" aria-hidden="true">
+    <circle cx="40" cy="28" r="12"/>
+    <circle cx="15" cy="47" r="8"/>
+    <circle cx="65" cy="47" r="8"/>
+    <path d="M22 77V63q0-20 18-20t18 20v14ZM3 80V66q0-10 12-10M77 80V66q0-10-12-10M18 89h44"/>
+  </svg>
+  <strong>LEADERSHIP</strong>
+</span>
       </div>
 
       <div class="platform" aria-hidden="true"></div>
@@ -808,10 +857,7 @@
         LinkedIn
       </a>
 
-      <a class="button" href="mailto:colbyjkugel@gmail.com">
-        Email me
-      </a>
-    </div>
+     <span class="email-text">colbyjkugel@gmail.com</span>
 
     <p class="hall-instruction">
       Select a bay door to explore.
@@ -1051,115 +1097,45 @@
       </div>
     </section>
 
-    <section
-      class="overview"
-      id="projects"
-      aria-labelledby="projects-title"
-    >
-      <a class="button" href="#home">Return to the hall</a>
+  <section
+  class="overview"
+  id="projects"
+  aria-labelledby="projects-title"
+>
+  <a class="button" href="#home">Return to the hall</a>
 
-      <div class="overview-heading">
-        <div class="eyebrow">Projects</div>
-        <h1 id="projects-title" tabindex="-1">
-          Hardware, systems, and experimentation.
-        </h1>
-        <p>
-          Selected work spanning digital design, sensing,
-          robotics, and mechanical prototyping.
-        </p>
+  <div class="overview-heading">
+    <div class="eyebrow">Projects</div>
+    <h1 id="projects-title" tabindex="-1">
+      Drone Launcher
+    </h1>
+  </div>
+
+  <div class="grid">
+    <article class="card wide">
+      <div class="eyebrow">Aggies Create</div>
+      <h2>Drone Launcher</h2>
+
+      <p>
+        Contributed to a launcher designed to accelerate a
+        35 lb drone to 55 mph. Manually milled aluminum
+        components from CAD models for the leg and
+        force-absorption system.
+      </p>
+
+      <span class="metric">Best in Showcase</span>
+      <span class="metric-label">
+        Spring 2025 Innovation Expo · $400 award
+      </span>
+
+      <div class="tags">
+        <span>CAD</span>
+        <span>Manual milling</span>
+        <span>Prototyping</span>
       </div>
-
-      <div class="grid">
-        <article class="card">
-          <h2>64-bit ARMv8 Subset Processor</h2>
-          <p>
-            Built a single-cycle datapath in Verilog with
-            arithmetic, logic, memory-access, and branch support.
-            Connected processor components and verified
-            behavior with self-checking simulation.
-          </p>
-
-          <div class="tags">
-            <span>Verilog RTL</span>
-            <span>Icarus Verilog</span>
-            <span>VCD waveforms</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h2>FPGA Traffic Light Controller</h2>
-          <p>
-            Implemented a finite-state machine and timing counters
-            for traffic control. Used Xilinx Vivado, simulation
-            waveforms, and FPGA LEDs to test operation.
-          </p>
-
-          <div class="tags">
-            <span>FPGA implementation</span>
-            <span>Vivado</span>
-            <span>Sequential logic</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h2>Water Level Sensor</h2>
-          <p>
-            Led a six-person team evaluating components,
-            current consumption, and software behavior.
-            Combined PCB development, soldering, and testing
-            to improve sensor reliability and battery life.
-          </p>
-
-          <span class="metric">2 → 20 days</span>
-          <span class="metric-label">Active battery operation</span>
-
-          <div class="tags">
-            <span>PCB design</span>
-            <span>Multisim</span>
-            <span>Test and measurement</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h2>Swarm Robotics</h2>
-          <p>
-            Supported electrical system implementation for
-            ground-based robots. Contributed to power budgeting
-            and component selection, and implemented UWB
-            triangulation for robot-position tracking.
-          </p>
-
-          <div class="tags">
-            <span>Embedded systems</span>
-            <span>UWB</span>
-            <span>System integration</span>
-          </div>
-        </article>
-
-        <article class="card wide">
-          <div class="eyebrow">Aggies Create</div>
-          <h2>Drone Launcher</h2>
-          <p>
-            Contributed to a launcher designed to accelerate a
-            35 lb drone to 55 mph. Manually milled aluminum
-            components from CAD models for the leg and
-            force-absorption system.
-          </p>
-
-          <span class="metric">Best in Showcase</span>
-          <span class="metric-label">
-            Spring 2025 Innovation Expo · $400 award
-          </span>
-
-          <div class="tags">
-            <span>CAD</span>
-            <span>Manual milling</span>
-            <span>Prototyping</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
+    </article>
+  </div>
+</section>
     <section
       class="overview"
       id="leadership"
